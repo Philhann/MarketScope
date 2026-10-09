@@ -1,0 +1,427 @@
+# Classification & Routing
+
+> Module 2 of 4. Run **after** `SKILL.md` and **before** `references/research-sop.md`. Scope, actor identity, purchase context, evidence access and competitor selection are routed here. This module does not validate research claims or compile reports.
+
+## Router contract
+
+1. Identify `Research Subject` independently of `Intent`: `Product`, `Company`, `Brand`, `Business Unit`, `Category or Industry`, or `Multiple Entities`. An actor is not a product category.
+2. Map bare product names to `Strategic Product Intelligence`, bare company/brand/BU names to `Competitor Intelligence`, categories to `Market & Industry Intelligence`, and multiple actors to `Comparative Intelligence`; explicit investment/acquisition/transaction DD activates `Investment Due Diligence` only when asked.
+3. Explicit Intent and Depth override defaults; bare names use `Highest / Strategic Deep Research`, `Remote`, and access actually available. Never assume the user has a paid database subscription, an API key, authority over a company or internal materials.
+4. Define entity/legal and accounting perimeter; `Reference Actor` if relevant; decision question, audience, horizon, geography, SKU/version or company/brand/BU boundary, customer job, comparison basis and completion criteria. For ambiguous names, infer and disclose unless the ambiguity materially reverses the research.
+5. Route the selected subject to the matching *mandatory domain matrix and execution series* in `references/research-sop.md`; the final deliverable follows `references/output-contract.md`.
+6. For material research domains, systematically **discover and attempt retrieval** across geographically and category-relevant social/content/community, retail marketplace, social-commerce, DTC, B2B, digital commerce, hiring and professional-network source families. Platform selection is coverage-led; business-function tags explain the observations **after** discovery, not a gate that excludes relevant platforms.
+7. At Highest depth, attempt the primary relevant platforms for each major target market and decision-critical secondary platforms, or document a specific access, applicability or feasibility reason for each omission. Maintain attempted queries/URLs, region/language, result and date; `Screened Only` is not `Retrieved`, and absence of accessible evidence is not absence of company activity. Never assume universal platform access or search every unrelated platform.
+
+## Intent → decision output matrix
+| Intent | Primary decision | Output |
+|---|---|---|
+| Strategic Product Intelligence | Product, market, ecosystem, company capability and opportunity | Strategic thesis and actions |
+| Consumer Review | Is the product worth buying? | Buy / Skip / Alternatives |
+| Upgrade Review | Is the meaningful version delta worth switching? | Upgrade / Keep and threshold |
+| Comparative Review | What wins for which buyer/segment/task? | Conditional winners and decision tree |
+| Professional Workflow Review | Does it reliably complete a real professional job? | Workflow success, compatibility and failure recovery |
+| Product Competitive Analysis | Where are product differences and gaps? | Positioning, trade-offs and product opportunity |
+| Competitor Intelligence | Why is a company/brand/BU strong or vulnerable, and how might it respond? | Capabilities, threats, scenarios and conditional actions |
+| Market & Industry Intelligence | Where do industry boundaries, profit pools and structural changes lie? | Market map, competition and scenarios |
+| Comparative Intelligence | How do normalized actors/products differ? | Conditional relative positions and implications |
+| Product Planning | What to build or prioritize? | Keep / Match / Differentiate / Avoid / Explore |
+| Procurement | Can it be adopted at scale? | Reliability, interoperability, TCO and vendor risk |
+| Investment Research (product-led) | What does product evidence imply about company/market/moat? | Capability and economics with uncertainty |
+| Investment Due Diligence (explicit) | Do rights, quality, downside and economics support a transaction? | Preliminary/full-scope conditions, verification, investment memo |
+
+## Subject, product and market classification
+
+### Classification model
+
+**Research Subject routing precedes Product Category routing.** Apply this taxonomy to an actual `Product` or to identified individual products within a company/brand portfolio. A `Company`, `Brand`, or `Business Unit` is not automatically `Hardware` or `Software`: map its entity relationships, business lines and portfolio first, then route the actual products separately under the two top-level categories. See `references/research-sop.md` for actor research.
+
+Every researched product receives a primary classification under one of two top-level categories:
+
+1. **Hardware** — a physical product is the primary deliverable or primary unit of use.
+2. **Software** — a digital application, service, platform, or software capability is the primary deliverable or primary unit of use.
+
+Assign a structured route:
+
+`Top-level Category → Category → Subcategory → Product Type`
+
+Record the brand, exact product / model / version, primary use case, and applicable secondary category tags separately. Category is determined by what the customer primarily adopts and uses, not by the presence of AI, a companion app, connectivity, or a brand's positioning language.
+
+**Product form, product category, target market, buyer, user, industry, and usage scenario are independent dimensions.** Product classification locates the offering; target-market routing identifies who buys and uses it; evaluation weighting selects evidence that can establish whether the relevant jobs succeed. Do not derive the buyer or market solely from Hardware / Software, professional-grade specifications, AI features, or price. Do not impose a universal scoring matrix.
+
+### Hardware taxonomy
+
+| Category | Example subcategories / product types |
+|---|---|
+| Computing & Mobile | Desktop / Laptop / Tablet / Smartphone / Handheld Computer / Mini PC |
+| Audio & Recording | Headphones / Earbuds / Speakers / Monitors / Microphones / AI Recorders / Field Recorders / Audio Interfaces / Mixers / Wireless Audio / Hearing & Monitoring Devices |
+| Musical Instruments & Performance Controllers | Acoustic / Electronic Instruments / **Smart Instruments** / Digital Pianos & Keyboards / Electronic Drums / Wind & String Controllers / Performance-oriented MIDI Controllers |
+| Creator & Studio Equipment | Cameras for streaming / Video Switchers / Capture Cards / Lighting / Physical Control Surfaces / Graphic Tablets / Recording Accessories |
+| Imaging & Video | Cameras / Lenses / Action Cameras / Gimbals / Drones / Imaging Equipment |
+| Displays & XR | Monitors / Projectors / TVs / VR & AR Headsets / Smart Glasses |
+| Wearables & Personal Devices | Smartwatches / Smart Rings / Fitness Trackers / Personal Assistive Devices |
+| Smart Home & IoT | Hubs / Sensors / Locks / Lighting / Climate Devices / Home Appliances |
+| Robotics & Automation | Robotic Vacuums / Lawn Robots / Service Robots / Consumer & Industrial Robots |
+| Networking & Storage | Routers / Access Points / NAS / External Storage / Network Appliances |
+| Power & Connectivity | Chargers / Power Banks / Batteries / Docks / Hubs / Cables / Power Stations |
+| Gaming Hardware | Consoles / Handheld Consoles / Controllers / Gaming Peripherals |
+| Pet Technology | Automatic Feeders / Smart Litter Boxes / Trackers / Pet Cameras / Health Monitors |
+| Health & Fitness Hardware | Medical-adjacent Consumer Devices / Wellness Wearables / Fitness Equipment / Recovery Devices |
+| Mobility & Industrial Hardware | E-bikes / Personal Mobility / Industrial Sensors / Specialized Connected Equipment |
+
+**Smart Instruments is a Hardware subcategory, not a standalone Hardware category:** `Hardware → Musical Instruments & Performance Controllers → Smart Instruments → Product Type` (for example Smart Guitar, AI-enabled Keyboard, Smart Electronic Drum, or Guided-learning Instrument). Route an instrument here when its central user job involves musical performance, practice, learning, expressive control, or composition through a physical instrument. Its teaching app, cloud account, AI engine, or sound library is an ecosystem / software layer, not a reason to reclassify the instrument as Software. Conventional controllers may be assessed alongside Smart Instruments when their primary performance workflow overlaps, without reclassifying all controllers as Smart Instruments.
+
+### Software taxonomy
+
+| Category | Example subcategories / product types |
+|---|---|
+| Music & Audio Software | DAWs / Notation Software / MIDI Editors / Virtual Instruments / Effects & Plug-ins / Sampling & Sound Libraries / Mixing & Mastering / AI Music Creation / Audio Restoration / Music Collaboration / Distribution Tools |
+| Video & Motion Software | Video Editing / Motion Graphics / Color Grading / VFX / Live Production / AI Video Generation |
+| Design & Imaging Software | Raster & Vector Design / UI-UX Design / CAD & 3D / Image Processing / AI Image Generation / Asset Management |
+| Writing, Publishing & Content | Writing Editors / CMS / Publishing Platforms / Translation & Localization / Content Repurposing |
+| Productivity & Work Management | Documents / Spreadsheets / Presentations / Tasks / Project Management / Scheduling / Personal Workflow Automation |
+| Knowledge & Research | Note-taking / PKM / Search / Reference Managers / Research Assistants / Information Aggregation |
+| Communication & Collaboration | Messaging / Video Conferencing / Whiteboards / Team Collaboration / Creator Collaboration |
+| AI Assistants, Agents & Platforms | General Assistants / Agent Builders / AI Workflows / Model Platforms / AI Search / Multimodal Tools |
+| Development & Engineering | IDEs / Code Assistants / Low-code & No-code / DevOps / Testing / API Platforms / Developer Infrastructure |
+| Data & Analytics | BI / Data Warehouses / Data Integration / Analytics & Dashboards / Experimentation / ML & MLOps |
+| Enterprise Operations | ERP / HRM / Finance / Procurement / Support / Workflow & Knowledge Platforms |
+| Sales, Marketing & Customer | CRM / Email Marketing / Social Media Management / Advertising / SEO / Customer Success |
+| Commerce & Payments | E-commerce Platforms / Subscriptions / Billing / Payment Software / Digital Marketplaces |
+| Education & Learning | LMS / Adaptive Learning / Language Learning / Music Education / Interactive Training |
+| Security, Privacy & Infrastructure | Identity / Endpoint & Network Security / Privacy Software / Cloud Infrastructure / Backup & Recovery |
+| Health & Lifestyle Software | Fitness / Wellness / Medical-adjacent Applications / Personal Finance / Travel & Daily-life Services |
+| Device Companion & IoT Platforms | Device Control Apps / Firmware Managers / Smart Home Platforms / Hardware-linked Cloud Services |
+| Entertainment & Social Software | Media Services / Games / Communities / UGC & Social Platforms |
+
+These are extensible routing categories, not an exhaustive product list. Add a narrower subcategory when the product's actual user job cannot be represented adequately. Avoid multiplying top-level categories or treating a feature (e.g., generative AI) as a product class when it spans many categories.
+
+### Target market, buyer, user, industry, and scenario routing
+
+For company/brand/BU research, assign these market dimensions **to specific business lines or customer segments**, not one unsupported company-wide label. A company can sell Hardware and Software across multiple evidenced markets; do not collapse the portfolio into one category.
+
+After establishing the product form and category, classify its commercial and usage context on **separate, non-exclusive axes**:
+
+| Dimension | Field(s) | What to determine |
+|---|---|---|
+| Product form and function | `product_form`, `category`, `subcategory`, `product_type` | What is the offering? `Hardware` or `Software` is the only top-level product form. |
+| Target market | `target_markets[]`, `market_routes[]` | Which markets does the supplier explicitly address or demonstrably serve? Allow multiple labels. |
+| Potential market | `potential_fit_markets[]` | Which other markets might be suitable but lack evidence of actual targeting or adoption? Keep hypotheses separate. |
+| Buyer and decision authority | `primary_buyer`, `procurement_owner`, `decision_makers[]` | Who funds, selects, approves, or procures it? These roles can differ. |
+| End users and roles | `end_users[]`, `user_roles[]` | Who operates it, for what jobs, and with what expertise? Do not assume the payer is the operator. |
+| Industry vertical | `industry_verticals[]` | Where is it used (e.g., Education, Healthcare, Finance, Manufacturing, Media, Public Administration)? Multiple tags are valid. |
+| Scenario and deployment | `usage_scenarios[]`, `deployment_contexts[]` | Under what task, environment, scale, data sensitivity, and operating constraints is it used? |
+
+`target_markets[]` may contain the following **overlapping analytical labels**:
+
+| Label | Operational meaning | Common decision lenses, not automatic product requirements |
+|---|---|---|
+| `Consumer` | Individuals acquire a product through consumer-facing retail or self-service channels; personal purchases can also serve professional work. | Personal utility, usability, price, adoption frequency, support, retail and self-service channels. |
+| `Professional` | Skilled practitioners use a product in consequential, paid, specialist, or repeatable work. This is a **cross-cutting user/workflow lens**, not necessarily a separate purchasing organization. | Precision, workflow fit, interoperability, controllability, reliability, output and recovery costs. |
+| `Enterprise` | An organization acquires or governs a solution for business operations, teams, or scaled deployment. | ROI, security, identity and permissions, integration, governance, support, procurement, and TCO. |
+| `Government` | A civilian public-sector body is a buyer, deployer, or explicitly addressed customer. | Applicable procurement processes, public accountability, accessibility, privacy, maintenance, and jurisdiction-specific rules. |
+| `Defense` | A defense organization or mission-specific defense market is explicitly addressed or demonstrably served. This may overlap with Government or Enterprise. | Verified authorization and requirements, information protection, operational reliability, lifecycle support, trusted supply, and sector-specific procurement. |
+
+**Non-exclusivity matters.** An independent studio producer may be both `Consumer` and `Professional`; an enterprise technician is a professional end user but not necessarily an individual buyer; a defense contractor may be an `Enterprise` buyer in a `Defense` context. `Government` identifies an institutional purchaser or deployment context; `Defense` identifies a distinct sector/mission context. Do not force a single market tag or treat `Professional` as the same type of entity as `Enterprise`.
+
+`B2C`, `B2B`, `B2G`, direct-to-consumer, reseller, tender, and enterprise sales describe **transaction or go-to-market relationships**, not additional top-level product categories. Industry, skill level, end user, buyer, and deployment context must not be collapsed into one label.
+
+### Market evidence and classification boundaries
+
+Keep three propositions distinct **for each candidate market**:
+
+1. **Official Targeting** — the supplier demonstrably addresses the market through relevant product documentation, packaging, dedicated offering, sales pages, or programs. This establishes positioning, **not customer adoption**.
+2. **Verified Adoption** — credible evidence establishes actual use, deployment, or purchase in that market, with product/version/region context and source lineage. A logo, vague testimonial, or generic partner claim may be insufficient.
+3. **Potential Fit** — analyst-assessed possible applicability or a use-case hypothesis, not proof of targeting, eligibility, procurement readiness, certification, or adoption.
+
+Keep `target_markets[]` for sufficiently evidenced **Official Targeting** or **Verified Adoption** labels. When a product serves different buyers or workflows across overlapping markets, use `market_routes[]` to keep each market–buyer–user–scenario relationship intact. Keep unsupported opportunities only in `potential_fit_markets[]`; preserve basis, Confidence, Source/Evidence IDs, territory, and unknowns in `market_assessments[]`. `Unknown` means unverified; an empty list does not by itself mean the market is absent. Do not infer `Government` or `Defense` readiness from generic security claims, ruggedization, an AI feature, product category, or speculative dual use. Validate applicable regulations, certifications, sourcing conditions, and procurement status for each jurisdiction rather than assuming eligibility.
+
+### Routing decision rules
+
+1. Resolve **product identity**: brand, formal name, model / generation, SKU or edition, geography, firmware / app version as applicable.
+2. Identify the **primary purchased / adopted offering** and the complete task the customer expects to finish.
+3. Select **Hardware** or **Software** as the primary top-level category, then assign the narrowest defensible category and subcategory.
+4. Independently determine `target_markets[]`, potential-fit hypotheses, buyer / procurement decision maker, end users, roles, verticals, scenarios, and deployment context. Support market claims with `market_assessments[]`; leave unresolved dimensions `Unknown` rather than filling them from stereotypes.
+5. Record secondary category tags and **linked layers** (device / app / cloud / service / API / ecosystem). Do not duplicate the product simply because it has multiple layers.
+6. For bundles where hardware and software are both indispensable, select the adoption anchor as the primary route and create an explicit **combined evaluation profile**. If two standalone offerings can be purchased and evaluated independently, treat them as distinct product records with a documented relationship.
+7. Select the competitor universe **for the decision-making buyer and the real end-user job**. Compare distinct market routes separately when acquisition model, workflow, or deployment differs materially.
+8. If product identity, buyer, market, or scenario ambiguity would materially change the benchmark set or method, apply `references/classification-routing.md`; otherwise state the assumption and proceed.
+
+### Evaluation routing
+
+Determine which outcome dominates: objective performance, scenario success, workflow completion, human factors, reliability / lifecycle, ecosystem value, AI task success, data outcomes, or safety / behavior. These are *evaluation dimensions*, not classification categories.
+
+| Category / task type | Primary outcome | Default evaluation emphasis |
+|---|---|---|
+| Headphones / Audio Playback | Listening outcome | Acoustic Measurement + Scenario |
+| Speakers / Monitors | Room listening outcome | Acoustic + Scenario |
+| Audio & Recording Hardware | Capture quality + production workflow | Measurement + Workflow + Reliability |
+| Musical Instruments & Performance Controllers (Smart Instruments subcategory) | Playability, expression, learning / creation | Latency + Expressivity + Human Factors + Workflow |
+| Cameras / Video Hardware | Capture success | Workflow + Output Quality |
+| Displays | Display performance | Instrument-heavy + Scenario |
+| Smartwatches / Wearables | Continuous-wear value | Long-term + Ecosystem |
+| Smart Home / IoT | Automation task success | Reliability + Ecosystem |
+| Cleaning Robots | Completed household task | Outcome + Required Intervention |
+| Routers / Networking | Coverage and stability | Load + Long-term |
+| Chargers / Power | Electrical performance | Objective-heavy + Safety |
+| Keyboards / Mice / Controllers | Control consistency | Ergonomics + Latency |
+| Gaming Hardware | Sustained game performance | Performance + Thermal + Ergonomics |
+| XR / Smart Glasses | Sustained usability | Ergonomics + Display + Latency |
+| AI Recording / Other AI Hardware | End-to-end task success | Workflow + Output Quality + Reliability + Privacy |
+| Pet Technology | Animal acceptance + safety | Behavior + Reliability |
+| DAW / Music Production Software | Completion of real production tasks | Workflow + Stability + Format / Plug-in Compatibility + Export Quality |
+| AI Music / Audio Software | Controllable, reusable creative results | Task Quality + Editability + Output Structure + Consistency + Rights / Data Boundaries |
+| Design / Video Creator Software | Production output and iteration efficiency | Output Fidelity + Editability + Workflow + Compatibility |
+| Productivity / Collaboration Software | Task completion and team coordination | Workflow + Reliability + Interoperability + Switching Cost |
+| AI Assistants / Agents | Correct task completion under constraints | Task Success + Tool Reliability + Failure Recovery + Latency + Cost |
+| Developer Tools | Correct, maintainable technical output | Task Quality + Integration + Debuggability + Security |
+| Data / Analytics Platforms | Trustworthy decisions and operational delivery | Data Quality + Correctness + Latency + Governance + TCO |
+| Enterprise / Commerce Software | Business process success | Integration + Security + Reliability + Economics |
+| Security / Privacy Software | Protection and incident recovery | Verified Effectiveness + Failure Modes + Compliance |
+| Device Companion / IoT Software | Successful device-to-service workflow | Interoperability + Reliability + Privacy + Lifecycle |
+
+For Software, consider version / platform, data portability, permissions, onboarding, collaboration, integration, API / plug-in support, offline behavior, cloud dependencies, usage limits, subscription tiers, update policy, support, and security when material. Evaluate digital services by reproducible workflow evidence rather than hardware-centric benchmarks.
+
+### Market-specific evaluation overlay
+
+Apply these lenses **after** the category/task evaluation track. They guide research priorities; they do not impose fixed weights or assert that every product meets a sector's requirements.
+
+| Market lens | Buyer / decision route | Incremental evidence priorities | Decision / failure criteria |
+|---|---|---|---|
+| Consumer | Individual purchase, family/shared use, self-service | Frequency of use, experience, pricing, availability, support and return terms | Utility exceeds full ownership cost and friction |
+| Professional | Practitioner-led purchase, studio/team approval | Output standards, controllability, interoperability, repeatability, project handoff and time lost to recovery | Reliable completion of a meaningful professional task |
+| Enterprise | Economic buyer, IT/security, administrators, procurement, end users | Integration, identity, permissions, auditability, deployment, admin controls, SLAs, change management, TCO | Organization-wide value and manageable implementation risk |
+| Government | Public procuring authority, compliance/security, service operator | Applicable procurement rules, vendor eligibility, accessibility, data handling, continuity, support, transparency | Demonstrable compliance and service continuity for the stated jurisdiction |
+| Defense | Authorized defense buyer/contractor, security and operational stakeholders | Applicable acquisition and security requirements, suitability evidence, supply assurance, mission-specific reliability and sustainment | Verified fitness and authorization for the identified use case; otherwise `Unknown` |
+
+For mixed markets, build a **market × buyer × end-user task × scenario** matrix. Retain category-specific tests, then add only evidence-bearing market criteria; expose conflicting priorities (e.g., professional control vs consumer simplicity, enterprise administration vs individual flexibility). Never use one aggregate score to hide a market-dependent conditional winner. Requirements vary by agency, country, buyer, contract, and deployment; do not present a generic checklist as a certification or approval.
+
+**Example (illustrative classification, not product facts):** A smart guitar is `Hardware → Musical Instruments & Performance Controllers → Smart Instruments → Smart Guitar`, whether bought by a hobbyist (`Consumer`) or a paid performer (`Professional`). An AI recorder remains Hardware → Audio & Recording, while a separately licensed transcription service may have its own Software record. Possible government use is only `Potential Fit` without evidence of targeting or deployment.
+
+### Weighting rules
+
+1. Do not force one score model across categories or products with different jobs.
+2. Weight tests and evidence by real tasks, verified target markets, buyer constraints, end-user roles, usage frequency, and failure cost.
+3. Treat category-specific failure modes as first-class findings.
+4. A benchmark with no demonstrated connection to user success is supporting evidence, not the decision itself.
+5. Prefer practical task success over specification or feature-count leadership.
+6. For Highest depth, evaluate every mandatory Analytical Domain even when a subtopic is not applicable; mark `Not Applicable` only with a structural reason. For software, hardware-only subtopics such as BOM, mechanical tooling, and manufacturing yield may be Not Applicable, but distribution dependencies, infrastructure costs, platform gatekeepers, partner / API exposure, data rights, and software delivery economics remain assessable.
+
+### Cross-category products
+
+Build a combined evaluation profile when a product crosses category boundaries; do not change evidence integrity rules. Examples include an AI recorder with transcription software, smart glasses with recording and cloud AI, a smart instrument with a learning / generative subscription, or creator hardware with a software platform.
+
+For each layer, identify its independent value, dependencies, failure modes, cost, buyer, and end-user workflow. Compare the complete workflow and ecosystem-adjusted value **in addition to** the primary hardware or software product. Maintain one primary classification for each product while allowing multiple secondary evaluation tracks. A category-level study spanning standalone hardware and software offerings may maintain separate primary product routes under the same decision question.
+
+## Clarification and default routing
+### Ask / Infer / Proceed
+Ask only when an unresolved high-impact fact could reverse subject identity, legal/brand/reporting perimeter, intent, target buyer/market, comparison universe, evidence method or decision, **and** reliable inference plus disclosure would not suffice. `High Impact + Low Confidence → Ask`; `High Impact + High Confidence → Infer + disclose`; `Low Impact → Proceed`. Ask at most three genuinely blocking questions; no default questionnaire.
+### Execution Profile separation
+Keep independent: `Research Subject` (Product / Company / Brand / Business Unit / Category / Multiple Entities), `Intent`, `Audience`, `Depth`, `Evidence Mode` (Remote / Hands-on / Internal), `Evidence Access` (Public / Licensed / Authorized Internal / Professional Third-party / Unavailable), and `Scope`. A narrow Intent or specific audience does not imply shallow Depth.
+### Bare-name defaults
+- Product → `Strategic Product Intelligence`; Company/Brand/BU → `Competitor Intelligence` (not automatic transaction DD); Category/Industry → `Market & Industry Intelligence`; Multiple Entities → `Comparative Intelligence` using a shared comparable unit.
+- `Highest / Strategic Deep Research`; `Remote`; actual permitted public access unless authorized otherwise. Explicit user Intent/Depth overrides these defaults. Explicit investment/acquisition/transaction intent activates `Investment Due Diligence`.
+- Resolve ambiguous names with available evidence and disclose the assumption; ask only when materially decision-changing.
+### High-impact dimensions and fallback
+Check exact entity/owner/group/BU and region; product/model/SKU; upgrade baseline; buyer/procurement authority/end user, market and workflow; geography; time horizon; budget/price; targeting vs verified adoption vs potential fit; reference actor; and actual rights to paid/internal data. Ask only when a change is consequential and cannot safely be inferred.
+Otherwise use an evidenced core company/brand boundary or current mainstream product variant with region disclosed; observed dated street price or MSRP; buyer/market labels only with supporting evidence; a competitor universe of direct rivals, substitutes, adjacent threats and benchmarks; mark unresolved facts `Unknown`. Follow the request language. Do not invent institutional adoption or procurement eligibility.
+## Competitor universe and comparison route
+### Universe and depth
+Construct a broad set of decision-relevant candidates: `Direct Competitor`, `Same-budget Competitor`, `Previous Generation`, `Internal Alternative`, `Substitute Solution`, `Benchmark`, `Emerging Competitor`. Record **Reason for Inclusion** for each and verify a shared buyer/job, not just a category name. Distinguish evidence of sector targeting from actual deployment.
+Allocate depth by decision relevance: `Deep Benchmark Set` (full dimensions), `Extended Comparison Set` (material scenario deltas), and `Long Tail / Watch Set` (position, price, differentiation, threat and evidence status). Highest-depth coverage does not require equal-depth testing for every candidate.
+### Comparable units, outcomes and trade-offs
+Normalize product/generation/SKU, region/date, firmware/software, buyer/task/deployment, method/settings and MSRP/street/discounted/subscription price, currency and tax where material; do not compare incompatible published results without caveats. Compare decisions and issues, not disconnected mini-reviews; segment-specific winners may differ. Use:
+`Spec → Performance → Experience → Workflow Outcome → Strategic Implication`; `Measurable → Perceptible → Decision-relevant`.
+Every major advantage requires its trade-off (e.g. Battery↔Weight, Performance↔Thermals, Compactness↔Repairability, Openness↔Ecosystem, AI↔Latency/Privacy/Cloud). Prefer conditional winners over universal scores.
+### Actor-level peers and responses
+For `Competitor Intelligence`, compare actors: direct rivals, substitute providers, platform/ecosystem controllers, upstream enablers, adjacent entrants, emerging challengers and strategic benchmarks. Define Company/Brand/BU boundary before comparison. Record `Entity / Boundary / Inclusion Reason / Market & Job / Geography & Period / Evidence Status / Depth`.
+Normalize ownership, group/segment perimeter, year, currency, mix, revenue/GMV/ARR/market-share/valuation definitions and source method; segment revenue is not whole-company revenue. Analyze demand, retention, channels, cost where disclosed, IP/partners, operations, capital, execution and strategic flexibility. Rankings require defensible comparable bases; otherwise report qualitative positions and limits.
+Model `Reference Actor → Competitor Incentive & Capability → Plausible Move → Counter-scenario → Trigger → Conditional Response`. If the user's company capabilities are unknown, use an explicit industry benchmark, not invented strengths.
+### Portfolio and ecosystem
+When material, distinguish portfolio roles (`Entry / Volume / Profit / Flagship / Showcase / Halo / Gateway / Retention`), price/feature/name/SKU architecture, overlaps/cannibalization, upgrade path and platform reuse. Naming is only a hypothesis: `Name → Price → Feature → Segment → Technology → Role`.
+Test full ecosystem workflows: `Pair → Handoff → Data Continuity → Automation → Reliability → Third-party Compatibility → Switching Cost`. Keep Standalone Value separate from Ecosystem-adjusted Value.
+## Evidence-source selection and access routing
+
+### Source selection hierarchy
+
+Select sources **from the claim to be verified**, not from a fixed preference for a named platform. Prefer primary dated records, then transparent independent analyses, then secondary aggregators, customer reports, and finally unsupported claims. Record exact claim-role, access date, publication/effective date, entity and jurisdiction, original source lineage, and limitations.
+
+1. **Original filings/registries:** official government corporate registries, stock-exchange filings, audited published accounts, official licensing/administrative/procurement/judicial records, patent/trademark offices when available.
+2. **Company primary materials:** product pages, official releases, investor relations, annual reports, case studies, hiring pages, partner announcements, technical docs; label management/vendor claims as claims unless independently verified.
+3. **Industry reporting and research:** credible financial/technology/trade press, 36Kr (36氪), analyst reports, specialist publications, interviews; verify original press release, filing or recorded statement where consequential.
+4. **Business-information aggregators:** 天眼查 (Tianyancha), 企查查 (Qichacha), 爱企查 (Aiqicha), and analogous licensed platforms; use for discovery, entity disambiguation, change tracking and cross-checking, not as proof of independent primary origins.
+5. **Behavior and operations signals:** original employer career listings, public recruitment-platform postings, attributable social/company pages and creator content, professional-network updates, authorized public ad libraries, brand-owned shops, retailer and reseller listings, marketplace offers, app stores, review communities, distributed content, patents, repositories and public VoC. Separate public activity, offers, reviews and advertised demand from orders, revenue, conversion, workforce changes and verified adoption.
+6. **Authorized internal and specialist evidence:** written data-room records, customer contracts, reconciliations, expert/financial/legal/technical assessments when access has been granted and source scope is documented.
+
+### Platform-to-question routing
+
+| Source family | Questions it helps answer | Verification boundary |
+|---|---|---|
+| 36Kr and comparable business media | Funding announcements, strategic shifts, interviews, launch chronology, ecosystem events | Reported event ≠ cash received, achieved scale or independently validated forecast; find original announcement, filings or transaction corroboration |
+| 天眼查 / 企查查 / 爱企查 | Name aliases, registrations, shareholders as displayed, linked entities, disclosed changes, business risks, trademarks/IP pointers | Aggregators may share government/third-party origins, differ in freshness/coverage, have paid fields; confirm material facts in original public registers where possible |
+| 国家企业信用信息公示系统 and other official business registries | Relevant disclosed PRC company registration, public annual filing and supervisory/abnormality records | Jurisdiction and effective dates matter; registry fields do not fully reveal all contractual beneficial-control rights |
+| Exchange filings / IR / official annual reports | Public-company results, geographic/segment disclosures, management statements, debt, material transactions | Consolidated vs subsidiary/brand reporting unit; audited vs unaudited and period/metric definitions |
+| National IP offices, public patent and trademark registries | Filings, status, assignee/owner and technological direction | Filing ≠ granted enforceable right; ownership/status/scope must be checked; patents ≠ shipped capabilities |
+| Public procurement and court/regulatory sources | Award announcements, public judgments, regulatory and compliance events | Tender ≠ awarded contract; award ≠ delivered revenue; allegation ≠ final judgment; dates/jurisdiction/search gaps matter |
+| Employer careers, open-source, app stores, distributor sites, published reviews | Hiring direction, engineering signals, channels, product adoption/failure hypotheses | Postings ≠ hires; repository activity ≠ proprietary capability; reviews ≠ representative customer adoption |
+| LinkedIn | Public company updates, attributed organizational announcements, permitted job listings and publicly visible professional-role evidence | Profiles or platform headcounts are incomplete and changeable; job ads are not filled positions; access, identity, and recency must be checked |
+| Facebook and publicly accessible Meta advertising disclosures | Attributed brand posts, community/customer discourse, observable campaign creative and disclosed ad-presence signals | Engagement, followers, comment counts and ad presence do not prove reach quality, media spend, conversions, revenue or verified adoption |
+| 脉脉 (Maimai) | Publicly accessible professional discussion, employer/recruiting signals and organizational hypotheses in China | Anonymous or self-reported claims are not verified employee testimony or representative sentiment; do not expose personal data |
+| 猎聘 (Liepin) | Publicly available specialist, managerial and employer/agency vacancy signals | Confirm hiring legal entity, agency role, vacancy age and reposts; salary ranges are not actual payroll or successful hiring |
+| 前程无忧 (51job) | Public vacancy mix by function, city and employer, when observable | Listings may be expired, duplicated or syndicated; availability and public access vary |
+| 智联招聘 (Zhaopin) | Public role requirements, job locations and demand by employer/industry | A vacancy is a recruitment intention, not a measured headcount increment or approved budget |
+| BOSS直聘 (BOSS Zhipin) | Publicly observable job scope, skills, location and recruiting-company disclosures | Employer and recruiter identity can differ; listing activity or recruiter status does not prove hiring completion |
+| Licensed corporate/market intelligence databases | Historical company events, funding, ownership and market context when subscribed | Verify license, fields, vintage and original provenance before claiming completeness or automation |
+
+Named platforms are **examples, not guaranteed accessible integrations or validated current API capabilities**. Check each platform's actual public visibility, user authorization, terms, freshness and license at execution time. Do not assume accounts, paid subscriptions, APIs, unrestricted profile access, people directories, ad metrics, or export rights.
+
+### Hiring, professional-network and social/GTM source selection
+
+These are **cross-cutting evidence routes**, not Research Subjects, product categories or new primary SOPs. Use them to test a stated company, brand, business-unit, product, industry or diligence question; do not produce generic "social listening" or a vacancy dump by default.
+
+| Research question | Signal family and preferred origin | Typical routing | Minimum boundary |
+|---|---|---|---|
+| Is the actor recruiting for a specific capability or market? | Employer's dated careers page first; then accessible LinkedIn, 猎聘, 前程无忧, 智联招聘, BOSS直聘 or other relevant listings | Competitor C3–C5; Product P8 cross-call; Diligence D3 people/tech | Advertised role and employer; not a hire, net staff growth, funded project or shipped capability |
+| Is there a credible organizational shift? | Attributed employer announcements, role/leadership disclosures, repeated original vacancies, relevant filings | Competitor C2–C5 and C7; diligence D3 | Public title or job ad does not establish organization chart, reporting line, authority or retention |
+| What does local professional discussion suggest? | Permitted, publicly accessible 脉脉 discussions and professional-network material | Competitor C3–C5; qualitative hypothesis testing | Anonymity, self-selection, sample limits, hearsay and privacy may prevent verification |
+| How is a brand publicly positioning an offering? | Attributed Facebook/LinkedIn company pages, official releases, permitted public advertising disclosures | Competitor channels/GTM; Product positioning; Market study | What the actor published or advertised, not proven customer acceptance or performance |
+| Are there observable marketing or community shifts? | Dated public page posts, public ad-library entries, disclosed platform engagement with comparable definitions | Competitor C3–C7; brand/market study | Reach, spend, conversion, revenue and customer retention are Unknown absent separate supporting records |
+
+**Selection logic:** `Decision claim → strongest originating source → permitted candidate platforms → entity/time/geography fit → independent corroboration → evidence gap`. Prioritize employer-origin vacancies and verified company accounts where possible; a job board's reprint of the same employer listing is usually one evidence origin. Choose Chinese job platforms for China-specific labor-market questions and globally relevant platforms where the workforce, buyer market and observed availability justify them; never presume equal coverage across geographies or industries. If the source family could be material but is inaccessible, record `Unavailable` / `Limited Evidence` in the affected ResearchItem and name the missing test; do not fabricate a negative search or claim that all listed platforms were checked.
+
+**Signal hierarchy:** `Verified operating outcome > employer-authored dated statement or original recruitment posting > independently corroborated public observation > syndicated listing or attributed social interaction > anonymous allegation / unsupported extrapolation`. This ordering is question-dependent: an original recruitment post directly supports *advertised demand*, not the stronger proposition that the vacancy was filled. A verified professional's public role may corroborate their stated title as of a date but not the complete team or reporting hierarchy. Corporate posts and advertising can establish `Official Targeting` or communicated positioning when specific enough, not `Verified Adoption` or sales.
+
+Before recording each signal, resolve the employer/brand/entity and any recruitment intermediary; original job ID/link, role, location, contract/employment context, salary currency and pay period if public; post/update/observed dates; vacancy status when observable; original vs repost vs agency syndication; official vs employee vs anonymous voice; product/business relevance; and source-access level. Public presence is time-bounded; missing or removed posts do not establish historical absence. Do not collect nonessential identity, personal contact, sensitive employment or private relationship data, and do not evade sign-in walls, anti-bot systems or access controls.
+
+### Social, commerce and owned-channel intelligence routing
+
+**Discover relevant platform evidence first; use the business mechanism to interpret it.** `Awareness / PR → Education & Consideration → Demand Capture / Acquisition → Conversion → Fulfillment → Service / Retention → Advocacy / VoC`. This is a functional map, not a required linear consumer journey. Add `B2B Lead Generation`, `Employer Brand`, `Developer Ecosystem`, and `Supplier / Wholesale` tags where applicable. A single platform may serve multiple functions; maintain one identity and attach multiple functional roles rather than counting it as multiple companies or storefronts.
+
+**Source-family decision matrix:**
+
+| Question / business function | Preferred evidence and candidate family | Routing and decision boundary |
+|---|---|---|
+| Awareness, positioning, PR, public communication | Official WeChat, Weibo, Facebook, Instagram, LinkedIn, X, Threads, public company channels and dated releases | Product P2/P8; Actor C3–C5; official content verifies what was communicated, not resulting awareness or market penetration |
+| Content-led discovery, creator promotion, product education | Douyin, Kuaishou, Xiaohongshu/RED, Bilibili, YouTube, TikTok, Instagram, Pinterest, Snapchat, Twitch, attributable creator posts and disclosed partnerships | P2/P5/P8; C3–C5; distinguish organic, sponsored, affiliate and reposted material; views and follower counts do not verify incremental sales |
+| Community, VoC, trust and pre-purchase evaluation | Reddit, Discord, Zhihu, Tieba, Douban, PTT, Dcard, Naver Cafe, public forums, YouTube comments and verified retailer reviews | P2/P5/P6 and VoC RAW–CLEAN–GOLD; C3–C5; separate brand control, author type, genuine purchase evidence, selection bias and independent origins |
+| Professional outreach, organization and B2B demand | LinkedIn, permitted professional communities, published case studies, official partner/contact pages | Actor C3–C5 and C7; no inference of signed customers, organizational headcount, contracts or pipeline value from posts |
+| Messaging, service and retention | Public WeChat/Weixin service entry points, LINE Official Accounts, WhatsApp Business, Messenger, Telegram, KakaoTalk, Zalo and disclosed CRM/loyalty flows | C3–C5; P8; publicly visible service capability does not prove retention, response rate or LTV |
+| Marketplace offer, purchase-intent and price competition | Taobao/Tmall/Tmall Global, JD/JD Worldwide, Pinduoduo, Amazon, Walmart Marketplace, eBay, AliExpress, Temu and relevant local retailers | P2/P6/P7; C3–C6; normalize exact SKU, merchant/seller, country, tax, shipping, date, discounts and availability; list price ≠ transacted ASP |
+| Social-commerce conversion and creator affiliate distribution | Douyin E-commerce, Kuaishou E-commerce, Xiaohongshu commerce, WeChat Shop / Mini Programs and TikTok Shop **where officially available** | P8; C3–C6; content engagement, catalog presence and creator links ≠ completed orders or realized GMV |
+| Vertical and regional retail or value positioning | Dewu/POIZON, Vipshop, Xianyu, Meituan; Etsy, Wayfair, Newegg, Zalando, Rakuten, Yahoo! Shopping Japan, Qoo10, Coupang, Naver Shopping, Shopee, Lazada, Tokopedia/TikTok Shop, Flipkart, Myntra, Mercado Libre, Allegro, bol, OTTO, Noon, Jumia, Ozon, Wildberries, and other material local marketplaces | Select by sector, operating region and actual merchant eligibility, not platform fame. A second-hand listing may inform resale price, not first-party new-unit sales |
+| Direct brand commerce, pricing policy, subscriptions and relationships | Verified company-owned DTC site or application; Shopify, WooCommerce, BigCommerce, SHOPLINE or Shoplazza storefronts if attributable; official payment/fulfillment/service pages | P2/P8; C3–C6; distinguish ecommerce infrastructure provider from a marketplace; site presence ≠ DTC revenue, PMF or proprietary customer database |
+| Wholesale, distributors and institutional procurement | Company distributor locators, authorized retailers, Alibaba.com, 1688, Made-in-China, Global Sources, Faire, IndiaMART, Thomasnet, Amazon Business and public procurement records | P8; C3–C6; advertised MOQ/wholesale prices, supplier profiles and buyer logos do not confirm delivered contracts or supplier ownership |
+| Software / digital distribution and SaaS evaluation | Apple App Store, Google Play, Microsoft Store, Steam and appropriate digital storefronts; G2, Capterra and Trustpilot as customer-feedback sources | Product P2/P5/P7; actor C3–C6; distinguish app listing, version, paid subscription, visible rating/reviews and verified active/paying users |
+
+**Extended candidate index (illustrative, nonexclusive; not a presence claim):**
+
+- **China social/content/community:** WeChat Official Accounts / Channels, Weibo, Douyin, Kuaishou, Xiaohongshu/RED, Bilibili, Zhihu, Toutiao, Baijiahao, QQ/QQ Channels, Tieba, Douban, Dianping. Distinguish corporate publishing, user communities, verified advertisements, and merchant storefronts.
+- **Global social/content/community:** Facebook, Instagram, TikTok, YouTube, LinkedIn, X, Threads, Reddit, Pinterest, Snapchat, Discord, Telegram, WhatsApp, Messenger, Twitch, Quora, Medium, Substack, Bluesky, Mastodon, Tumblr. Developer and creator ecosystems such as GitHub, Hugging Face, Product Hunt, Behance and Dribbble are conditional specialist sources, not automatically equivalent to general social networks.
+- **Regional relationship/community:** Japan/Taiwan/Thailand LINE; Korea KakaoTalk, Naver Blog/Cafe/Band; Vietnam Zalo; Russia/CIS VK, Odnoklassniki; Taiwan Dcard/PTT. Use platform-native regional language only when accurately understood; never assume one country's platform features exist in another.
+- **China retail/social commerce:** Taobao, Tmall, Tmall Global, JD, JD Worldwide, Pinduoduo, Douyin E-commerce, Kuaishou E-commerce, Xiaohongshu commerce, WeChat Shop/Mini Programs, POIZON/Dewu, Vipshop, Xianyu and Meituan/instant retail, selected according to product and location.
+- **Global and cross-border retail:** Amazon, eBay, Walmart Marketplace, Etsy, AliExpress, Temu, SHEIN Marketplace, TikTok Shop, Wayfair, Newegg and Target Plus, subject to their current location, sector and merchant requirements.
+- **Japan, Korea and Taiwan retail:** Rakuten Ichiba, Amazon Japan, Yahoo! Shopping Japan, Qoo10 Japan, au PAY Market; Coupang, Naver Shopping/Smart Store, Gmarket, 11st, SSG.COM, Kakao Shopping; momo, PChome, Shopee Taiwan and Ruten.
+- **Southeast Asia and India retail:** Shopee, Lazada, TikTok Shop where available, Tokopedia/TikTok Shop and Blibli; Flipkart, Amazon India, Myntra, Meesho, AJIO and Nykaa. Avoid treating country-level launch, service scope and seller eligibility as static.
+- **Europe, Latin America, Middle East, Africa and Russia retail:** Allegro, bol, OTTO, Kaufland, Zalando, Cdiscount, eMAG; Mercado Libre, Amazon Brazil/Mexico, Magalu, Falabella, Coppel; Noon, regional Amazon operations, Trendyol; Jumia and Takealot; Ozon, Wildberries and Yandex Market. Apply exact country-specific checks and note restricted markets/permissions.
+- **Owned commerce, B2B, software and creator distribution:** Verified brand stores and app checkout, Shopify/WooCommerce/BigCommerce/SHOPLINE/Shoplazza as infrastructure, Alibaba.com, 1688, Made-in-China, Global Sources, Faire, IndiaMART, Thomasnet and Amazon Business for wholesale; Apple App Store, Google Play, Microsoft Store, Steam for software; G2, Capterra and Trustpilot for bounded review evidence; Bandcamp, SoundCloud, Spotify and Apple Music where the product or creator business requires media distribution evidence, not automatically retail sales.
+
+**Geography and category overlay:** Route China-mainland consumer products toward relevant WeChat/Weibo/Douyin/Xiaohongshu/Bilibili/commerce channels; US/global DTC toward YouTube/Meta/TikTok/Reddit/Amazon/brand store where material; Japan toward LINE/Rakuten/Yahoo! Shopping/Amazon Japan; Korea toward Kakao/Naver/Coupang; Southeast Asia toward Shopee/Lazada/TikTok Shop where locally offered; India, Europe, Latin America, MENA and Africa toward their actually relevant regional candidates. This is a **discovery heuristic, not evidence** of actor presence, platform availability or seller approval. Verify business model, B2C/B2B/B2G, audience, category suitability, region and date before retrieval; do not force consumer retail marketplaces onto a B2B-only provider.
+
+**Presence and attribution:** Classify each discovered destination as `Verified Official`, `Officially Linked / Authorized`, `Third-party Retailer / Reseller`, `Creator / Affiliate`, `User Community`, `Unverified / Ambiguous`, or `Unavailable`. Resolve the exact URL/account/shop, legal entity or brand association, control or authorization evidence, account locale, observed date, seller-of-record and fulfillment party where visible. A platform search result is a *candidate*, not evidence that the company operates the account or store.
+
+**Coverage-first acquisition:** `Question → Market/category platform universe → Priority retrieval attempts → Attribution → Normalization → Independent validation → Business-function interpretation → Finding / evidence gap`. At Highest depth, do not stop at a function-based shortlist: attempt principal social/community and commerce platforms suitable for the subject's key markets, then expand to decision-relevant regional/niche sources. Record unexplored relevant channels as explicit coverage gaps; no false exhaustive-search claims.
+
+**Non-interchangeable outcome levels:** `Presence → Activity / Offer → Interest / Engagement → Orders / Leads → Fulfillment → Recognized Revenue / Contribution Profit → Retention`. Advance only with evidence appropriate to the next level. `GMV ≠ Revenue ≠ Profit`; followers ≠ reach ≠ unique purchasers; review count ≠ unit sales; a displayed marketplace sales badge may be estimated, capped, time-windowed, promotional or unverifiable. Platform attribution reports, when legitimately disclosed, require denominator, lookback window, conversion definition and incrementality limitations.
+
+**Commercial and review normalization:** Preserve platform, country, currency, SKU/variant/bundle/condition, offer ID, seller role, first/third-party distinction, fulfillment model, displayed MSRP/list price, observed price, promotion/coupon/eligibility, tax/shipping/payment/return conditions, stock/display status, publication/access timestamp and currency basis. For ratings/reviews capture review date, sample period, purchase verification when visible, incentives, version, language, bot/syndication risk and unique-experience lineage. Never compare unadjusted prices across tax regimes or ratings across differently selected populations. Reuse VoC RAW–CLEAN–GOLD, and triangulate demand, sell-through, margins or actual business outcomes with independent operational/financial evidence wherever available.
+
+### Commerce sales-intelligence source routing
+
+**Trigger by the economic question, not by the existence of a storefront.** At Highest depth, screen sales evidence for an in-scope retail/consumer-product actor when sell-through, channel scale, market traction, pricing power, or channel dependence could affect the competitive conclusion. For a direct request for sales, GMV, market share or channel performance, make this an explicit ResearchItem. For B2B, wholesale, subscriptions and software, first determine whether marketplace *unit sales* are even the relevant economic measure. Screening requires a documented decision; it does not require a platform-by-platform scrape or confer analytics access.
+
+| Question / source family | Route and permissible acquisition | What may be established / what remains unproven |
+|---|---|---|
+| Is there a reported company, segment or channel sales result? | Original audited statements, exchange filings, issuer IR, dated company disclosures, qualified transaction documentation | Reported metric within its legal/reporting perimeter and accounting period; a headline may not allocate sales to this brand, platform or SKU |
+| What seller-level sales records exist? | **User-authorized** seller-center exports, marketplace business reports, order/settlement/refund records, approved official API endpoints | Platform-native transaction or reconciliation measures within granted account, date and merchant rights; never assume data-room, dashboard, connector or account privileges |
+| What can the public product page show? | Original accessible Taobao/Tmall, JD, Pinduoduo, Douyin E-commerce, Kuaishou, Xiaohongshu commerce, Amazon, Walmart, TikTok Shop, Shopee, Lazada, Rakuten, Coupang, Mercado Libre or other locally relevant listing | Dated, seller/SKU-specific native sales badge or counter **as displayed** and only with its defined unit/window; unknown counter scope is an `Observed Sales Indicator`, not independently verified transactions |
+| Is there a credible third-party estimate? | Licensed and lawfully usable commerce analytics or published specialist research with identifiable model, vintage, merchant/market scope and uncertainty | A `Method-disclosed Estimate` if inputs, sampling and error limitations are inspectable; vendor dashboards, opaque figures or scraped reposts are not verified official sales |
+| Can other evidence contextualize demand? | Ratings/reviews, search/bestseller positions, inventory displays, creator links, traffic/engagement and seller promotions | Demand or distribution proxies only; **not** units, orders, GMV, ASP, recognized revenue, market share or advertising ROI without separately validated conversion model |
+| Is actual sell-through or market share being compared? | Consistent product/category definitions, geography and time windows; authorized/refund-adjusted transactions or appropriately bounded independent datasets | Rank numeric outcomes only at matched metrics and levels; publication from multiple sites sharing one feed does not constitute independent confirmation |
+
+**Retrieval priority:** `Decision metric → unit of analysis → original disclosure / permitted direct record → accessible native platform observation → method-transparent independent data → proxy-only evidence gap`. Choose the country and relevant channels first; publicly absent metrics are `Unknown` rather than zero. Record search/observation timestamps, exact URLs/queries, permission tier, original publisher and merchant, reporting dates, available precision and gaps. If only one seller has data, do not silently generalize it to all sellers, a brand, a platform, an entire category or global revenue.
+
+**Metric semantics:** Treat `orders`, `items ordered`, `paid units`, `shipped units`, `delivered units`, `returned/cancelled units`, `net units`, `sell-in`, `sell-through`, `GMV`, `net GMV`, `gross sales`, `net sales`, `recognized revenue`, `payouts`, `ASP`, `AOV`, `run-rate`, and `market share` as distinct measures. A platform counter can represent rolling, cumulative, thresholded, merchant-specific or otherwise unknown scope. Align `order/paid/shipped/settled/accounting date`, timezone, actual return/refund window, paid versus free/promotional units, gross versus net tax/shipping/discount treatment, B2B versus B2C, country, currency/FX and consolidation boundary before comparing or calculating. `Sales = price × visible units` is not an accepted default equation; never transform rank, reviews or badges into unit sales with an undisclosed conversion factor.
+
+**Cross-channel reconciliation:** Detect marketplace and DTC duplicates, syndicated storefronts, affiliate attribution, cross-listed sellers, distributor `sell-in` vs end-consumer `sell-through`, entity consolidation and gross-to-net recognition. Share and growth require explicit comparable denominators and baselines; do not sum platform-reported GMV with issuer revenue. When a defensible estimate is feasible, declare formula, sources, assumptions, confidence interval or scenario range, applicability and a falsification condition; otherwise output `Not Estimable / Limited Evidence`.
+
+
+### Canonical commercial-function tags and channel control
+
+Use stable `business_function_tags[]` across `PlatformPresenceRecord` and `SocialGTMSignalRecord`. Tags describe the **actor's evidenced or explicitly hypothesized use**, not an intrinsic platform property. A single account or storefront can have multiple tags; keep one canonical identity per scoped entity/market and do not multiply presence counts by tag count.
+
+| Canonical tag | Decision question / function | Example source route | Minimum evidence distinction |
+|---|---|---|---|
+| `brand_pr` | How does the actor communicate identity, claims and public positions? | Official Weibo, Facebook, Instagram, X, LinkedIn, newsrooms | Published positioning ≠ measured awareness |
+| `content_education` | Where is a complex offering explained or demonstrated? | YouTube, Bilibili, Zhihu, product tutorials, creator media | Tutorial availability ≠ comprehension or trial |
+| `demand_creation` | Which media may initiate discovery or desire? | Douyin, TikTok, Xiaohongshu, Pinterest, Instagram, creator partnerships | Attention/interest ≠ incremental demand |
+| `acquisition_leadgen` | Where are visitors, inquiries, qualified leads or B2B opportunities generated? | Website landing pages, LinkedIn, ads, app discovery | Clicks/inquiries ≠ qualified pipeline or closed sales |
+| `commerce_conversion` | Where can a buyer place an eligible transaction? | Amazon, Taobao/Tmall, JD, Shopee, TikTok Shop, owned checkout | Checkout/listing availability ≠ completed order |
+| `fulfillment_service` | Who fulfills, handles returns or provides customer assistance? | Merchant policies, marketplace fulfillment, official service portals | Displayed service terms ≠ observed service reliability |
+| `crm_retention` | How does the actor support ongoing buyer relationships? | WeChat, LINE, WhatsApp, official apps, email/loyalty programs | Channel presence ≠ retention or LTV |
+| `community_voc` | Where do customer needs, defects and alternatives surface? | Reddit, Discord, Xiaohongshu, Zhihu, product reviews, support forums | Convenience sample ≠ population incidence |
+| `b2b_wholesale` | How are enterprise buyers, distributors and procurement channels reached? | Alibaba.com, 1688, IndiaMART, Thomasnet, distributor locators | Supplier page or MOQ ≠ delivered contract |
+| `talent_employer` | What workforce demand or employer positioning is observable? | LinkedIn, Maimai, Liepin, 51job, Zhaopin, BOSS Zhipin | Vacancy ≠ hire/headcount growth |
+| `developer_ecosystem` | How are third-party developers, professionals and integrations engaged? | GitHub, Hugging Face, Product Hunt, technical communities | Repository / showcase ≠ customer adoption or defensibility |
+
+**Separate role from control and acquisition mechanism.** Store `brand-controlled / platform-controlled / reseller-controlled / creator-mediated / user-controlled / unverified` as an analytical channel-control assessment with its evidence; do not infer legal ownership of customer data, checkout, ad inventory or transaction records from the platform label. Identify whether demand is mainly `content-led discovery`, `search / comparison capture`, `relationship-led`, `sales-led B2B`, or `mixed / unknown` for the specific actor and market. A platform's general affordance does not verify the firm's actual use.
+
+### Candidate selection, evidence access and retrieval decisions
+**Mandatory platform-coverage assessment:** Compile candidates for each **material market × product/category × buyer/channel** from the index above, actor-linked accounts/stores, local search, retailer locators and observed customer discussions. Maintain an explicit `Platform Retrieval Coverage Register`; platform capability and general market popularity are candidates, not observed company presence.
+
+1. `Mandatory Screening`: classify each major local social, content, community, commerce, retail/DTC or specialist family as `Primary / Secondary / Out of scope` with a reason; do not impose consumer marketplaces on B2B-only firms.
+2. `Retrieval Attempt`: at Highest depth actually search **each Primary** and material Secondary platform, or identify a concrete access/irrelevance/feasibility exclusion. Use current and historical queries with actor aliases, model/SKU, regional scripts and language; check official linked destinations, native platforms where accessible, related user posts, creator reports and merchant offers. Search-engine snippets locate candidates but do not prove native facts.
+3. `Expansion`: check meaningful peer channels, local/niche marketplaces, reviews, public ad material and independent user communities when they may change coverage or falsify claims; avoid repeating syndicated results. Use a documented diminishing-returns stop rule only after key sources have been attempted and unresolved material gaps are disclosed.
+4. `Closure`: preserve `Screened Only`, `Retrieval Attempted`, `Observed Source`, `Attribution Verified` as **search-action states**, separate from `Coverage Status` and presence/absence. Log each platform's query or URL, market/language, date, access method, outcome, identity proof, next evidence need and skip/block rationale. No result/blocked login is not evidence that an actor lacks an account or sales.
+
+**Native retrieval checklist:** Cross-check official outbound links and brand/store locators against native account/shop URLs; verify business vs reseller/creator/community control. For social sources distinguish owned posts, paid/affiliate creative, third-party reviews and comments; for commerce resolve seller-of-record, actual offer, SKU/bundle/condition, local price/taxes/shipping, return and fulfillment terms. For LinkedIn/hiring respect publicly visible role/vacancy limits; for social commerce distinguish views/ads from native store orders; for specialist B2B/digital channels apply their own purchase model.
+
+**Peer comparison:** hold jurisdiction, exact product generation, buyer task, channel role, query class and observation window reasonably constant; note sampling and access asymmetry. Compare `retrieval coverage`, `observed activity`, `offer/experience` and `independently verified outcome` in different columns. No cross-platform reach/social-to-sales score from incompatible counts.
+### Entity, date, and metric normalization
+
+Before comparing or merging records:
+
+- Match official legal name, alias, brand, enterprise identifier where publicly available, parent/child relationship, geography, and effective date; preserve uncertainty for conflicting identities.
+- Distinguish **Event Date** (when something happened), **Publication Date**, **Registry Effective Date**, and **Observation/Access Date**.
+- Record financial perimeter (consolidated/group/subsidiary/BU/brand), currency, accounting period, FX/tax basis and metric semantics. Never sum overlapping companies, financing rounds, or business segments.
+- Map `Source → Primary Origin / Lineage → Evidence → Finding`; ten news articles quoting the same financing release remain one origin.
+- Label event as `Announced`, `Filed`, `Approved`, `Effective`, `Completed`, `Observed`, or `Disputed / Unknown` only when the source supports that status. A vacancy can be `Observed` without any evidence of the hire being `Completed`; an advertisement can be `Observed` without proof of sales.
+
+### Access and permission constraints
+
+Distinguish `Public`, `Licensed / Subscription`, `Authorized Internal / Data Room`, `Professional Third-party`, and `Unavailable / Unknown` access. Use user-authorized connectors or official APIs only within their granted rights, and normal permitted public browsing; do not bypass authentication, access controls, rate limits, robots/terms restrictions, or export/paywalls. Do not promise continuous monitoring from a one-time Skill invocation.
+
+If a paid platform's deep fields are unavailable, continue with legitimate public sources and explicitly describe the coverage gap; never backfill with invented ownership stakes, full financials, cap tables or litigation results. With internal material, keep access/classification and confidentiality boundaries visible and distinguish public from authorized nonpublic evidence.
+
+### Events and change signals
+
+Maintain `IntelligenceEventRecord` when strategy or materiality requires it:
+
+`Entity → Event Type → Claim/Event Status → Event Date → Published Date → Source IDs → Independent Corroboration → Business Mechanism → Candidate Hypothesis → Counter-explanation → Decision Impact → Revalidation Trigger`.
+
+Potential event types: capital/financing, ownership, corporate restructure, hiring/leadership, published employer capability demand, product/portfolio, research/IP, regulatory/legal, public social/GTM campaign, channel/partner, customer/procurement, manufacturing/supply, pricing/business model, strategic entry/exit.
+
+A plausible multi-source pattern (e.g., announced funding + algorithm hiring + new AI feature release) permits an **expansion hypothesis**, not proof of committed spending, internal strategy, hiring completions or product-market fit. Attribute what is observable; identify what further evidence would confirm or refute the interpretation.
+
+### Verification and limitations
+
+A source may legitimately establish **what was declared**, not that the underlying predicted performance actually occurred. For consequential claims: confirm correct entity and period, locate primary origin, compare independent dimensions, resolve material discrepancies, record negative-search coverage, and state the causal alternatives. In diligence, incomplete public court/registry results do not establish absence of obligations or risk.
+
+### Execution checklist
+
+1. Identify the exact fact/decision claim and its required proof level.
+2. Determine best original record(s) and at least one independent dimension if material and feasible.
+3. Check real available access; retrieve only authorized/public evidence.
+4. Capture IDs, original URLs/record IDs, source and effective dates, jurisdiction, entity and reporting perimeter.
+5. De-duplicate and cross-check origin, unit, wording and event status; for vacancies and social posts check employer/account attribution, original vs repost/agency copy and selection bias; for commerce records check official/third-party merchant, exact SKU, market, normalized offer/price/date, review lineage and metric definitions.
+6. Escalate contradictions, material gaps and unreliable estimates.
+7. Convert only supported observations to Findings; mark hypotheses and revalidation triggers separately.
+8. Audit Source Register and attribution before reporting.
